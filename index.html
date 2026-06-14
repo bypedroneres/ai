@@ -206,7 +206,7 @@
 
   .style-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 8px;
   }
 
@@ -422,11 +422,11 @@
       gap: 20px;
     }
     .style-grid {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(1, 1fr);
       gap: 6px;
     }
     .palette-row { gap: 6px; }
-    .palette-swatch { width: 36px; height: 24px; }
+    .palette-swatch { width: 40px; height: 40px; }
     .export-group {
       flex-direction: row;
       flex-wrap: wrap;
@@ -436,7 +436,7 @@
   }
 
   @media (max-width: 400px) {
-    .style-grid { grid-template-columns: repeat(3, 1fr); }
+    .style-grid { grid-template-columns: repeat(1, 1fr); }
     .preview-mobile-wrap { width: 60px; }
     .export-group { flex-direction: column; }
     .btn-export { min-width: 0; }
@@ -551,7 +551,7 @@ canvas {
 }
 
 .style-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 
 .palette-row {
