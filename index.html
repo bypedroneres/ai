@@ -422,7 +422,7 @@
       gap: 20px;
     }
     .style-grid {
-      grid-template-columns: repeat(6, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       gap: 6px;
     }
     .palette-row { gap: 6px; }
@@ -528,6 +528,60 @@
   }
 
   .site-footer a:hover { opacity: 0.7; }
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.main-layout {
+  width: 100%;
+  max-width: 100%;
+}
+
+.preview-container {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+.style-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.palette-row {
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .preview-container {
+    flex-direction: column !important;
+    align-items: center;
+  }
+
+  .preview-desktop-wrap {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .preview-mobile-wrap {
+    width: min(120px, 35vw);
+  }
+
+  .btn-export {
+    min-width: 0 !important;
+  }
+
+  .export-group {
+    flex-direction: column !important;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -614,7 +668,6 @@
   <div class="modal-hint">Clique com o botão direito e escolha "Salvar imagem como"</div>
   <div class="modal-info" id="modalInfo"></div>
 </div>
-
 <script>
 const DESKTOP_W = 3840, DESKTOP_H = 2160;
 const MOBILE_W = 1290, MOBILE_H = 2796;
