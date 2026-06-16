@@ -9,7 +9,7 @@ export const PALETTES = [
   { name: 'Fire',     colors: ['#1a0000','#450000','#7a0000','#b30000','#e63900','#ff6a00','#ff9500','#ffb700','#ffd166','#fff1c2'] },
   { name: 'Purple',   colors: ['#100014','#22002e','#3f005a','#5c0085','#7a00b3','#9b1fff','#b84dff','#cf88ff','#e4c2ff','#f7ebff'] },
   { name: 'Toxic Glow', colors: ['#050807','#0c1410','#14221a','#1e3325','#2a4d2e','#3f6b2f','#5f8a2c','#86b326','#b9e83f','#f6ffe0'] },
-  { name: 'Honey Amber', colors: ['#1a141a','#423738','#70400b','#9e5b07','#c4760a','#e59312','#f4b315','#fcd143','#ffe380','#fff5cc'] },
+  { name: 'Arctic Winter', colors: ['#081018','#112131','#1d3348','#33516a','#55768f','#7d9eb5','#a7c2d3','#cfe0ea','#e8f0f5','#ffffff']},
   { name: 'Neon Horizon', colors: ['#13051a','#290d3a','#3c1259','#3b2285','#2b42b0','#1d6cd4','#2ca1e8','#59cef2','#94f2f7','#e0fbfd'] },
   { name: 'Solar Flare', colors: ['#1f0505','#3a0d0d','#611111','#871c26','#ab3037','#cb4f41','#e6744a','#f79d5c','#fcc579','#fdf2a6'] },
   { name: 'Deep Forest', colors: ['#051214','#0b2426','#123a39','#18524c','#226b5d','#32856c','#49a07a','#68ba89','#91d49d','#c3ebd0'] },
@@ -23,4 +23,4 @@ export const PATTERNS = [
     'mountains',
     'concentric-arcs',
     'desert-dunes',];
-export const PATTERN_LABELS = ['Colinas', 'Onda', 'Dunas', 'Montanhas', 'Arcos', 'Deserto'];
+export const PATTERN_LABELS = ['Colinas', 'Onda', 'Dunas', 'Montanhas', 'Arcos', 'Rabisco'];
