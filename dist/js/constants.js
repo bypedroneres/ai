@@ -23,4 +23,4 @@ export const PATTERNS = [
     'mountains',
     'concentric-arcs',
     'desert-dunes',];
-export const PATTERN_LABELS = ['Colinas', 'Onda', 'Dunas', 'Montanhas', 'Arcos', 'Rabisco'];
+export const PATTERN_LABELS = ['Colinas', 'Onda', 'Dunas', 'Montanhas', 'Arcos', 'Deserto'];
