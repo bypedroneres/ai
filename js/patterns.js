@@ -13,10 +13,10 @@ function drawPineTree(ctx, x, bottomY, width, height, rng) {
   ctx.lineTo(x + width * 0.08, bottomY);
   ctx.fill();
 
-  const segments = 5;
+  const segments = 30;
   for (let i = 0; i < segments; i++) {
     const t = i / (segments - 1);
-    const segHeight = height * 0.85;
+    const segHeight = height * 1;
     const topY = bottomY - height + (segHeight * t * 0.45);
     const currBottomY = bottomY - height + (segHeight * (t + 0.22));
     const currWidth = width * (0.25 + t * 0.75);
@@ -43,7 +43,7 @@ export function drawFlowingHills(ctx, w, h, pal, rng) {
     const t = (i + 1) / layers;
 
     const spacingFactor = isDesktop ? 0.40 : 0.33;
-    const baseY = h * (0.55 + (i / layers) * spacingFactor);
+    const baseY = h * (0.5 + (i / layers) * spacingFactor);
     ctx.fillStyle = getColor(pal, t * 0.85 + 0.1);
 
     ctx.beginPath();
@@ -79,11 +79,11 @@ export function drawFlowingHills(ctx, w, h, pal, rng) {
       let baseTreeWidth, baseTreeHeight;
 
       if (isDesktop) {
-        baseTreeWidth = h * (0.014 + i * 0.004);
-        baseTreeHeight = baseTreeWidth * (1.9 + rng() * 0.2);
+        baseTreeWidth = h * (0.045 + i * 0.004);
+        baseTreeHeight = baseTreeWidth * (1 + rng() * 0.2);
       } else {
-        baseTreeWidth = w * (0.022 + i * 0.008);
-        baseTreeHeight = baseTreeWidth * (2.2 + rng() * 0.4);
+        baseTreeWidth = w * (0.12 + i * 0.004);
+        baseTreeHeight = baseTreeWidth * (1 + rng() * 0.2);
       }
 
       const stepX = baseTreeWidth * 0.35;
