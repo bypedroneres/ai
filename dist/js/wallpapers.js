@@ -42,7 +42,7 @@ export const wallpapers = [
   // ── Ondas (pattern 1) — seed 3141 ── Light
   { id: 'wave-fire',            name: 'Onda Fogo',            pattern: 1, palette: 4,  seed: 3141, inverted: true },
   { id: 'wave-purple',          name: 'Onda Roxo',            pattern: 1, palette: 5,  seed: 3141, inverted: true },
-  { id: 'wave-toxic',           name: 'Onda Tóxico',          pattern: 1, palette: 6,  seed: 3141, inverted: true },
+  { id: 'wave-toxic',           name: 'Onda Tóxico',          pattern: 1, palette: 6,  seed: 3141, inverted: true,  featured: true},
   { id: 'wave-neon',            name: 'Onda Neon',            pattern: 1, palette: 8,  seed: 3141, inverted: true },
   { id: 'wave-cosmic',          name: 'Onda Cósmico',         pattern: 1, palette: 11, seed: 3141, inverted: true },
   { id: 'wave-blue',            name: 'Onda Azul',            pattern: 1, palette: 2,  seed: 3141, inverted: true },
@@ -102,7 +102,7 @@ export const wallpapers = [
   { id: 'peaks-blood-d',        name: 'Montanhas Sangue Escuro',     pattern: 3, palette: 13, seed: 1618, inverted: false },
 
   // ── Arcos (pattern 4) — seed 4669 ── Light
-  { id: 'arcs-fire',            name: 'Arcos Fogo',           pattern: 4, palette: 4,  seed: 4669, inverted: true, featured: true },
+  { id: 'arcs-fire',            name: 'Arcos Fogo',           pattern: 4, palette: 4,  seed: 4669, inverted: true },
   { id: 'arcs-purple',          name: 'Arcos Roxo',           pattern: 4, palette: 5,  seed: 4669, inverted: true },
   { id: 'arcs-toxic',           name: 'Arcos Tóxico',         pattern: 4, palette: 6,  seed: 4669, inverted: true },
   { id: 'arcs-neon',            name: 'Arcos Neon',           pattern: 4, palette: 8,  seed: 4669, inverted: true },

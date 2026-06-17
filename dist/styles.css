@@ -216,7 +216,7 @@ main {
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 2px;
-  color: #0a0a0a;
+  color: #ffffff;
   margin-bottom: 8px;
 }
 
@@ -224,12 +224,12 @@ main {
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 4px;
-  color: #0a0a0a;
+  color: #ffffff;
 }
 
 .featured-meta {
   font-size: 13px;
-  color: #0a0a0a;
+  color: #ffffff;
 }
 
 .featured-actions {
@@ -252,8 +252,8 @@ main {
 }
 
 .btn-primary {
-  background: #0a0a0a;
-  color: #f0f0f0;
+  background: #ffffff;
+  color: #000000;
   cursor: pointer;
 }
 
