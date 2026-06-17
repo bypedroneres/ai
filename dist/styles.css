@@ -95,7 +95,6 @@ nav a, nav button, nav .nav-tabs { -webkit-app-region: no-drag; }
   transition: var(--transition);
 }
 
-.nav-tab:hover { color: var(--text); }
 
 .nav-tab.active {
   background: #1a1a1a;
@@ -143,7 +142,18 @@ nav a, nav button, nav .nav-tabs { -webkit-app-region: no-drag; }
   transition: var(--transition);
 }
 
-.theme-tab:hover { color: var(--text); }
+.theme-tabs {
+  display: flex;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  padding: 3px;
+  gap: 1rem;
+}
+
 
 .theme-tab.active {
   background: #1a1a1a;
