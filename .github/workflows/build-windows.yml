@@ -3,9 +3,15 @@ name: Build Windows
 on:
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build-windows:
     runs-on: windows-latest
+    env:
+      APP_VERSION: 0.1.0
+      RELEASE_TAG: v0.1.0-windows
 
     steps:
       - name: Checkout repository
@@ -34,3 +40,14 @@ jobs:
             src-tauri/target/release/bundle/msi/**/*.msi
             src-tauri/target/release/bundle/nsis/**/*.exe
           if-no-files-found: error
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ env.RELEASE_TAG }}
+          name: WLLPR v${{ env.APP_VERSION }} — Windows
+          body: Windows build of WLLPR. Download the .msi installer or .exe below.
+          prerelease: false
+          files: |
+            src-tauri/target/release/bundle/msi/**/*.msi
+            src-tauri/target/release/bundle/nsis/**/*.exe
